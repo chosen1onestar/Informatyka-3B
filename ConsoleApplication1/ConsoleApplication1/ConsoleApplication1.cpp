@@ -19,9 +19,7 @@ void cesar(int k, char tab[])
 				tab[i] += k;
 	else
 		tab[i] = tab[i] + k + 26;
-
 }
-
 
 int main()
 {
@@ -41,6 +39,5 @@ int main()
 	cesar(-k, tab);
 
 	cout << "rozszyfrowane:" << tab << endl;
-
 	return 0;
 }
