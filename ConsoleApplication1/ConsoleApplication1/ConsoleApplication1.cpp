@@ -11,35 +11,34 @@ void cesar(int k, char tab[])
 		for (int i = 0; i < dl; i++)
 			if (tab[i] + k <= 'a')
 				tab[i] += k;
-			else
-				tab[i] = tab[i] + k - 26;
+	else
+		tab[i] = tab[i] + k - 26;
 	else
 		for (int i = 0; i < dl; i++)
 			if (tab[i] + k >= 'z')
 				tab[i] += k;
-			else
-				tab[i] = tab[i] + k + 26;
+	else
+		tab[i] = tab[i] + k + 26;
 
 }
 
 
 int main()
 {
+	int k;
 	char tab[100];
-
-	int klucz;
-
+	
 	cout << "Slowo:";
 	cin >> tab;
 
 	cout << "Numer (-26 <--> 26):";
-	cin >> klucz;
+	cin >> k;
 
-	cesar(klucz, tab);
+	cesar(k, tab);
 
 	cout << "zaszyfrowane:" << tab << endl;
 
-	cesar(-klucz, tab);
+	cesar(-k, tab);
 
 	cout << "rozszyfrowane:" << tab << endl;
 
