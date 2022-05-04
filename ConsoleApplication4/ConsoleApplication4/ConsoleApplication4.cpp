@@ -2,7 +2,7 @@
 using namespace std;
 
 void fibonacci(int n)
-{
+	{
 		int a = 0, b = 1;
 
 		for (int i = 0; i < n; i++)
@@ -13,12 +13,12 @@ void fibonacci(int n)
 
 
 		}
-}
+	}
 int main()
-{
+	{
 		int n;
 		cout << "Ile wyrazow ciagu wypisac : ";
 		cin >> n;
 		fibonacci(n);
 
-}
+	}
